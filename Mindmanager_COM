@@ -1,4 +1,98 @@
 mindmanager com支持的方法和属性
+mindmanager app的方法
 ['ActiveDocument', 'ActiveFrameHWnd', 'AddRef', 'AddXmlSchema', 'AddXmlSchemaFromUrl', 'AllDocuments', 'ArchitectureType', 'BrowserDialog', 'BusinessTypeRegistry', 'CheckLicense', 'Clipboards', 'CommandBars', 'Commands', 'ContainsAttributesNamespace', 'ControlStripTypeRegistry', 'CustomMdiWindows', 'CustomResourcesManager', 'DesktopServerManager', 'Documents', 'Edition', 'Events', 'ExportFilters', 'ExternalTopicHandlers', 'FeedbackManager', 'FileDialog', 'FullProductName', 'FullScreen', 'GetAddInByInterfaceId', 'GetAddInByProgramId', 'GetAttributes', 'GetCustomAttributeEmitsUndoHistory', 'GetCustomAttributeIsCopied', 'GetCustomAttributeIsModifyingDocument', 'GetCustomAttributeIsPersonalized', 'GetFileDialog', 'GetIDsOfNames', 'GetPath', 'GetProductExpired', 'GetTrialExpired', 'GetTypeInfo', 'GetTypeInfoCount', 'GetXmlSchemaVersion', 'GetXmlSchemaVersionSuffix', 'Height', 'HelpFilePath', 'ImportFilters', 'Invoke', 'LastSubMenu', 'Left', 'LinkManager', 'MapParts', 'MapShortcutCollections', 'MindManagerLanguage', 'MindManagerLanguageChanged', 'MindManagerLanguageShort', 'MjServiceClient', 'MjServiceUtilities', 'Name', 'NotificationsDialog', 'ObjectModelVersion', 'OptionPanes', 'Options', 'Path', 'QueryInterface', 'Release', 'RemotePlacesManager', 'Ribbon', 'RunMacro', 'SendEmail', 'SetCustomAttributeEmitsUndoHistory', 'SetCustomAttributeIsCopied', 'SetCustomAttributeIsModifyingDocument', 'SetCustomAttributeIsPersonalized', 'ShowHelp', 'StatusBarControls', 'TaskPanes', 'TeamApplication', 'Top', 'UpdateUIState', 'Utilities', 'Version', 'Visible', 'VisibleDocuments', 'WebExportHelper', 'Width', 'WindowState', '_ApplyTypes_', '_FlagAsMethod', '_LazyAddAttr_', '_NewEnum', '_Release_', '_UpdateWithITypeInfo_', '__AttrToID__', '__LazyMap__', '__bool__', '__call__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__int__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_builtMethods_', '_dir_ole_', '_enum_', '_find_dispatch_type_', '_get_good_object_', '_get_good_single_object_', '_lazydata_', '_make_method_', '_mapCachedItems_', '_oleobj_', '_olerepr_', '_print_details_', '_proc_', '_unicode_to_string_', '_username_', '_wrap_dispatch_', 'hWnd']
---------------------------------------------------
+--------------------------------------------------topic的方法
 ['AddBalancedSubTopic', 'AddControlStripType', 'AddNewTopic', 'AddRef', 'AddSubTopic', 'AllCalloutTopics', 'AllIcons', 'AllRelationships', 'AllSubTopics', 'Attachments', 'Attributes', 'Bookmark', 'Boundary', 'BusinessTopic', 'CalloutTopics', 'CenterInView', 'Collapsed', 'ConditionalFormattingSettings', 'ContainsAttributesNamespace', 'ContainsControlStripType', 'CreateBoundary', 'CreateHyperlink', 'CreateHyperlinkToTopic', 'CreateHyperlinkToTopicByGuid', 'CreateImage', 'DataContainer', 'Delete', 'Document', 'ExternalTopic', 'Faded', 'FillColor', 'Filtered', 'Find', 'FindNext', 'Focus', 'Font', 'Formulas', 'Frame', 'GetAttributes', 'GetBoundingRect', 'GetIDsOfNames', 'GetOffset', 'GetToXml', 'GetTypeInfo', 'GetTypeInfoCount', 'Guid', 'HasAttributesNamespace', 'HasBoundary', 'HasHyperlink', 'HasImage', 'HasNumberingScheme', 'HasSketch', 'HasTopicBookmark', 'HideFrame', 'Hyperlink', 'Hyperlinks', 'Icons', 'IgnoreFilters', 'Image', 'IncomingDependencies', 'Invoke', 'IsCalculatedCostRollupTopic', 'IsCalculatedIntermediateCostRollupTopic', 'IsCalculatedIntermediateRollupTopic', 'IsCalculatedTaskRollupTopic', 'IsCalloutTopic', 'IsCentralTopic', 'IsCostRollupTopic', 'IsDefaultTopicText', 'IsFirstSibling', 'IsFloatingTopic', 'IsFlowchart', 'IsInCostRollupBranch', 'IsInRollupBranch', 'IsLastSibling', 'IsLocked', 'IsMainTopic', 'IsOnLeftSide', 'IsSelected', 'IsSubTopic', 'IsSummaryTopic', 'IsTaskRollupTopic', 'IsValid', 'IsVisible', 'IsVisibleCentralTopic', 'Level', 'LineColor', 'MainTopicOffsetTopic', 'IsTaskRollupTopic', 'IsValid', 'IsVisible', 'IsVisibleCentralTopic', 'Level', 'LineColor', 'MainTopicOffsetPin', 'NewTopicFinder', 'NextSibling', 'Notes', 'OutgoingDependencies', 'ParentBoundary', 'ParentRelationship', 'ParentTopic', 'Path', 'PreviousSibling', 'QueryInterface', 'Relationships', 'Release', 'RemoveControlStripType', 'ResetDirty', 'ResetToStyle', 'ReviewComments', 'SaveToStyle', 'SelectOnly', 'SetDependency', 'SetFromXml', 'SetFromXmlString', 'SetFromXmlUrl', 'SetLevelOfDetail', 'SetMainTopicOffset', 'SetOffset', 'Shape', 'Show', 'ShowFrame', 'Sketch', 'SnapIntoView', 'Snapped', 'Style', 'SubTopics', 'SubTopicsLayout', 'Synchronization', 'Task', 'Text', 'TextColor', 'TextLabels', 'Title', 'TopicLabel', 'TopicNumbering', 'TopicPrefix', 'TransformFromXml', 'TransformToXml', 'TransformWithUrlFromUrlXml', 'TransformWithUrlFromXml', 'TransformWithUrlToXml', 'Type', 'UnfilteredCalloutTopics', 'UnfilteredRelationships', 'UnfilteredSubTopics', 'UserIcons', 'Xml', '_ApplyTypes_', '_FlagAsMethod', '_LazyAddAttr_', '_NewEnum', '_Release_', '_UpdateWithITypeInfo_', '__AttrToID__', '__LazyMap__', '__bool__', '__call__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__int__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_builtMethods_', '_dir_ole_', '_enum_', '_find_dispatch_type_', '_get_good_object_', '_get_good_single_object_', '_lazydata_', '_make_method_', '_mapCachedItems_', '_oleobj_', '_olerepr_', '_print_details_', '_proc_', '_unicode_to_string_', '_username_', '_wrap_dispatch_']
+--------------------------------------------------document的方法
+['Activate', 'ActiveViewMode', 'AddRef', 'AllBackgroundObjects', 'AllDataModelObjectsSets', 'AllFloatingTopics', 'AssignMapMarkers', 'AssignStyle', 'Attributes', 'Background', 'Baselines', 'Calendar', 'CenterInView', 'CentralTopic', 'Close', 'ContainsAttributesNamespace', 'DocumentBars', 'ExportMapMarkers', 'ExportStyle', 'ExternalDocument', 'Filter', 'FindByGuid', 'FloatingTopics', 'FullName', 'GetAllBusinessTopics', 'GetAttributes', 'GetBoundingRect', 'GetIDsOfNames', 'GetObjectByPoint', 'GetScrollPosition', 'GetTypeInfo', 'GetTypeInfoCount', 'GetVisibleRect', 'GraphicExport', 'Guid', 'HasAttributesNamespace', 'HoveredLinkTitleIndex', 'InstanceId', 'Invoke', 'IsAutoSpellingDisabled', 'IsBrowsable', 'IsCoEditing', 'IsEditable', 'IsEditableFor', 'IsFlowchart', 'IsInUndoRedoExecution', 'IsMjServiceDocument', 'IsMjServiceVersion', 'IsModified', 'IsReadOnly', 'IsRecovering', 'IsRemoteDocument', 'IsTaskEndDateAdjustDisabled', 'IsValid', 'LineJumpStyle', 'MapMarkerGroups', 'MapMarkersXml', 'MjServiceID', 'Name', 'NewTransaction', 'OptimizeForWeb', 'Path', 'Properties', 'QueryInterface', 'QuickPrint', 'Range', 'Release', 'Save', 'SaveAs', 'SaveAsWithVersionOption', 'SavePercentageIcon', 'SavePriorityIcon', 'SaveWithPreviewPng', 'SaveWithVersionOption', 'Selection', 'SetModified', 'SetScrollPosition', 'ShowCoEditingDisabledWarning', 'Slides', 'StyleXml', 'TopicStyles', 'Type', 'UnfilteredBackgroundObjects', 'UnfilteredDataModelObjectsSets', 'UnfilteredFloatingTopics', 'VisibleCentralTopic', 'Window', 'Xml', 'XmlTransformationContext', 'Zoom', 'ZoomFactor', '_ApplyTypes_', '_FlagAsMethod', '_LazyAddAttr_', '_NewEnum', '_Release_', '_UpdateWithITypeInfo_', '__AttrToID__', '__LazyMap__', '__bool__', '__call__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__int__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_builtMethods_', '_dir_ole_', '_enum_', '_find_dispatch_type_', '_get_good_object_', '_get_good_single_object_', '_lazydata_', '_make_method_', '_mapCachedItems_', '_oleobj_', '_olerepr_', '_print_details_', '_proc_', '_unicode_to_string_', '_username_', '_wrap_dispatch_']   
+---
+
+## ✅ 1. MindManager 主应用对象（`Application`）的 COM 方法和属性
+
+可通过：
+
+```python
+app = win32com.client.Dispatch("MindManager.Application")
+print(dir(app))
+```
+
+获取的结果。
+
+---
+
+### 🔹 常用属性与方法概览（`Application` 对象）
+
+| 属性/方法                                      | 类型        | 说明                |
+| ------------------------------------------ | --------- | ----------------- |
+| `ActiveDocument`                           | Document  | 当前活动图             |
+| `VisibleDocuments`                         | Documents | 所有可见文档的集合         |
+| `Documents.Add()`                          | 方法        | 新建图               |
+| `RunMacro("宏名")`                           | 方法        | 运行一个已注册的宏         |
+| `Visible`                                  | Bool      | 设置窗口是否显示          |
+| `Version`, `ObjectModelVersion`            | 属性        | 软件与接口版本号          |
+| `HelpFilePath`, `Path`                     | 属性        | 安装路径              |
+| `MapParts`                                 | 对象        | 图形库（如模板）          |
+| `CommandBars` / `Ribbon`                   | 对象        | 控制菜单栏或功能区         |
+| `Options`                                  | 对象        | 访问用户选项设置          |
+| `ExportFilters`, `ImportFilters`           | 对象        | 导出/导入功能集合         |
+| `TeamApplication`                          | 对象        | 团队协作接口（如 Co-edit） |
+| `BrowserDialog`, `FileDialog`              | 方法        | 打开文件/浏览器对话框       |
+| `Clipboards`, `LinkManager`, `SendEmail()` | 功能接口      |                   |
+
+> 📌 还有一些底层接口如 `QueryInterface`, `Release`, `Invoke`, `GetTypeInfo` 是 COM 的标准 IDispatch 方法，一般不需要手动调用。
+
+---
+
+## ✅ 2. `Topic` 对象（主题节点）的 COM 方法和属性
+
+可以通过：
+
+```python
+doc = app.Documents.Add()
+topic = doc.CentralTopic
+dir(topic)
+```
+
+获取的结果（关于topic的操作）。
+
+---
+
+### 🔹 常用属性与方法概览（`Topic` 对象）
+
+| 方法/属性                                           | 类型         | 说明            |
+| ----------------------------------------------- | ---------- | ------------- |
+| `Text`                                          | str        | 当前主题文本内容      |
+| `AddSubTopic()`                                 | 方法         | 添加一个子主题       |
+| `SubTopics`                                     | Topics 集合  | 子主题集合         |
+| `ParentTopic`, `PreviousSibling`, `NextSibling` | Topic      | 获取父级或兄弟主题     |
+| `Font`, `FillColor`, `LineColor`, `Shape`       | 样式控制       |               |
+| `Icons`, `TextLabels`, `TopicNumbering`         | 可视化辅助属性    |               |
+| `Hyperlink`, `Hyperlinks`                       | 单个或多个超链接设置 |               |
+| `Notes`                                         | Notes 对象   | 设置备注文本        |
+| `Sketch`, `Image`, `Boundary`                   | 图形装饰元素     |               |
+| `IsCentralTopic`, `IsFloatingTopic`             | Bool       | 判断主题类型        |
+| `SetMainTopicOffset()`                          | 方法         | 设置自由主题位置      |
+| `GetToXml()`, `SetFromXml()`                    | 方法         | 获取/设置为 XML 表达 |
+| `ResetToStyle()`, `SaveToStyle()`               | 方法         | 应用或保存为样式模板    |
+
+---
+
+## ✅ 总结结构
+
+你可以理解 MindManager 的对象模型为：
+
+```
+Application
+  └── Documents
+        └── Document
+              └── CentralTopic
+                    └── SubTopics
+                          └── Topic
+                                └── SubTopics ...
+```
+
+---
+
+使用这个接口，更容易实现自动化
+
+
