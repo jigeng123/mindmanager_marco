@@ -1,0 +1,94 @@
+宏教程
+# api官网
+https://www.mindmanager.com/en/pages/developers/api/20/#MacroTutorials.html
+# 第一个示例
+创建一个map，设置中心主题CentralTopic的text
+
+Sub Main
+ With VisibleDocuments.Add
+  .CentralTopic.Text = "Macro tutorial"
+ End With
+End Sub
+
+# 第二个示例
+清楚debug界面，使用变量【m_Document】【遍历（循环）】每一个document在documents（所有已经打开的document）中
+【如果】ismodified返回true，则输出unsaved：变量【m_Document】的属性【Name】
+【如果结束】
+下一个【遍历循环】。。。。。。。。。。
+尝试with 【Visibledocuments】使用【Add】方法，会添加一个【document】（自动选择到这个document）
+他的其中一个properties【.CentralTopic】，这个properties【.CentralTopic】的properties【.Text】的值改成字符串"Macro tutorial"
+定义一个变量【m_MainTopic】，是一个【Topic】object
+【document】（依旧是前面自动选择的）的properties【.CentralTopic】，这个properties【.CentralTopic】中的【AllSubTopics】执行了Add的方法，这样会创建一个【topic】在这个【AllSubTopics】中
+这个【topic】给到变量【m_MainTopic】
+【m_MainTopic】作为【Topic】object，他有properties【.Task】，properties【.Task】使用.complete方法，将Task的值变成0
+.Close（依旧是前面自动选择的【document】，document的一个方法，关闭），将document关闭
+
+Sub Main
+ Dim m_Document As Document
+ Debug.Clear
+ For Each m_Document In Documents
+  If m_Document.IsModified Then
+   Debug.Print "Unsaved: " & m_Document.Name
+  End If
+ Next
+ With VisibleDocuments.Add
+  .CentralTopic.Text = "Macro tutorial"
+  Dim m_MainTopic As Topic
+  Set m_MainTopic = .CentralTopic.AllSubTopics.Add
+  m_MainTopic.Task.Complete = 0
+  .Close
+ End With
+End Sub
+
+#自己第一次尝试
+在api官网
+查找topic object页面
+发现确实包括task
+task obejct页面往下会有个see also
+可以查看task obejct的方法和属性
+其中有个属性Complete，只能输入数字，我尝试输入9
+在宏编辑器前面灰列，给每一行打上红色调试点
+最终可看到task，是个9%（原图标只支持0-25-50-75-100）
+
+Sub Main
+ Dim m_Document As Document
+ Debug.Clear
+ For Each m_Document In Documents
+  If m_Document.IsModified Then
+   Debug.Print "Unsaved: " & m_Document.Name
+  End If
+ Next
+ With VisibleDocuments.Add
+  .CentralTopic.Text = "33333333333333333"
+  Dim m_MainTopic As Topic
+  Set m_MainTopic = .CentralTopic.AllSubTopics.Add
+  m_MainTopic.Task.Complete = 9
+ End With
+End Sub
+#自己第二次尝试
+在api官方查找topic object包含的object
+找到了notes
+查找see also
+查看到由Text属性
+我添加
+m_MainTopic.Notes.Text = 9
+出错，Text只支持字符串，修改：
+m_MainTopic.Notes.Text = "9"
+成功运行，子主题拥有便签，便签内容为：9
+
+Sub Main
+ Dim m_Document As Document
+ Debug.Clear
+ For Each m_Document In Documents
+  If m_Document.IsModified Then
+   Debug.Print "Unsaved: " & m_Document.Name
+  End If
+ Next
+ With VisibleDocuments.Add
+  .CentralTopic.Text = "33333333333333333"
+  Dim m_MainTopic As Topic
+  Set m_MainTopic = .CentralTopic.AllSubTopics.Add
+  m_MainTopic.Task.Complete = 9
+  m_MainTopic.Notes.Text = "9"
+ End With
+End Sub
